@@ -73,12 +73,12 @@ footer-text: Copyright (c) 2019 来自中世界
 #
 
 # 输入Disqus shortname，即可添加评论区，请查阅文档，设置自己的disqus站点，不要继续使用我的站点loffer
-disqus: loffer #shortname
+disqus: onceac #shortname
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
-  clientID: 
-  clientSecret: 
+  clientID: # 011fde669e66fd7b7316
+  clientSecret: # e59520c569b4aa294a385e97c5bdc9fdc2b1d61a 
   repo: 
   owner: 
 
