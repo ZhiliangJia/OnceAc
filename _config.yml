@@ -34,8 +34,8 @@ favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fav
 navigation:
   - name: 首页
     url: /
-  - name: 关于
-    url: /about
+  - name: 作者
+    url: /author
   - name: 归档
     url: /archive
   - name: 标签

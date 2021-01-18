@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 关于
-permalink: /about/
+title: 作者
+permalink: /author/
 ---
 
 # 基本信息
