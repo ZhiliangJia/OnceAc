@@ -82,6 +82,11 @@ gitalk:
   repo: Gitalk
   owner: ZhiliangJia
 
+# Copyright标准
+copyright:
+  year: 2021
+  user: ZhiliangJia
+
 # 输入Google Analytics web tracking code
 google_analytics:
 
