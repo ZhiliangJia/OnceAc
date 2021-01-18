@@ -9,7 +9,7 @@ permalink: /search/
 <ul id="results-container"></ul>
 
 <!-- script pointing to jekyll-search.js -->
-<script src="/js/simple-jekyll-search.min.js"></script>
+<script src="/src/js/simple-jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch({
