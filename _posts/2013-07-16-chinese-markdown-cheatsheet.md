@@ -12,6 +12,102 @@ toc: true
 
 [Markdown语法的完整文档在这里](http://daringfireball.net/projects/markdown/syntax)。下面整理的这些为了方便写博客时参考。
 
+```cpp
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+#include <list>
+#include <cstring>
+#include <numeric>
+#include <queue>
+#include <vector>
+#include <sstream>
+#include <algorithm>
+#include <stack>
+#include <set>
+#include <map>
+// #define File
+#define LL long long
+using namespace std;
+
+const int max_int = 2 ^ 31 - 2;
+const int maxn = 1e3 + 10;
+int arr[maxn][maxn][2];
+int val[maxn];
+int n;
+
+/**
+  * 获取当前位置的局部最优解
+  *
+  */
+void get_min_value(int m, int n, int p, int q, int i, int j) {
+    int ij0, ij1;
+    if(arr[i][j][0] > arr[i][j][1]) {
+        ij0 = arr[i][j][0];
+        ij1 = arr[i][j][1] + val[p];
+    } else {
+        ij0 = arr[i][j][0] + val[p];
+        ij1 = arr[i][j][1];
+    }
+    // cout << i << "  " << j << "£º" << endl;
+    // cout << ij0 << " " << ij1 << " " << val[p] << endl;
+    if(max(ij0, ij1) < max(arr[m][n][0], arr[m][n][1])) {
+        arr[m][n][0] = ij0;
+        arr[m][n][1] = ij1;
+    }
+}
+
+
+/**
+  * 寻找局部最优解
+  */
+void dp() {
+    int x = 1, y = 2;
+    for(int i = 1; i <= n - 1; i++) {
+        int xx = x, yy = y;
+        for(int j = 1; j <= n - y + 1; j++) {
+            // cout << xx << " " << yy << "    ";
+            get_min_value(xx, yy, xx, xx, xx + 1, yy);
+            get_min_value(xx, yy, yy, yy, xx, yy - 1);
+            xx++, yy++;
+        }
+        // cout << endl;
+        y++;
+    }
+}
+
+/**
+  * 初始化
+  */
+void init() {
+    for(int i = 0; i <= n; i++) {
+        for(int j = i; j <= n; j++) {
+            arr[i][j][0] = arr[i][j][1] = max_int;
+        }
+    }
+    for(int i = 1; i <= n; i++) {
+        arr[i][i][0] = val[i];
+        arr[i][i][1] = 0;
+    }
+}
+
+int main() {
+#ifdef File
+    freopen("cin.in", "r", stdin);
+#endif
+    ios::sync_with_stdio(false);
+    cin >> n;
+    for(int i = 1; i <= n; i++) {
+        cin >> val[i];
+    }
+    init();
+    dp();
+    cout << arr[1][11][0] << " " << arr[1][11][1] << endl;
+    return 0;
+}
+
+```
+
 ## 分段与分行
 
 以一个或多个空行来隔开段落；以两个或多个空格来段内换行。
