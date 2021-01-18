@@ -762,3 +762,14 @@ footer {
   padding-bottom: 2px !important;
 }
 
+#search-input{
+  padding: 12px 34px 12px 12px;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: .4px;
+  caret-color: #007991;
+  color: #007991;
+  outline: none;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
