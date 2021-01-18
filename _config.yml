@@ -79,7 +79,7 @@ disqus: # onceac #shortname
 gitalk:
   clientID: 011fde669e66fd7b7316
   clientSecret: e59520c569b4aa294a385e97c5bdc9fdc2b1d61a 
-  repo: https://zhiliangjia.github.io/OnceAc
+  repo: https://github.com/ZhiliangJia/OnceAc.git
   owner: ZhiliangJia
 
 # 输入Google Analytics web tracking code
