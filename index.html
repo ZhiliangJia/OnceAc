@@ -54,7 +54,7 @@ layout: default
   
   {% for post in paginator.posts %}
     {% unless post.pinned %}
-    <article class="post">
+    <article class="post self_card">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h1>
