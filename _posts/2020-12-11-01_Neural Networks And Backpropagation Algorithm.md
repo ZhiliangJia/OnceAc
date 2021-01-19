@@ -1,3 +1,17 @@
+---
+layout: post
+title: 神经网络和反向传播算法
+date: 2020-12-05
+Author: Zhiliang 
+tags: [Machine Learning]
+toc: true
+mathjax: true
+---
+
+神经网络其实就是按照**一定规则**连接起来的多个**神经元**。反向传播算法其实就是链式求导法则的应用。
+
+<!-- more -->
+
 [零基础入门深度学习(3) - 神经网络和反向传播算法](https://www.zybuluo.com/hanbingtao/note/476663)
 
 # 神经元
