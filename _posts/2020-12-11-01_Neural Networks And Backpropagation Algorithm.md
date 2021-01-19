@@ -2,7 +2,7 @@
 layout: post
 title: 神经网络和反向传播算法
 date: 2020-12-05
-Author: Zhiliang 
+author: Zhiliang 
 tags: [Machine Learning]
 toc: true
 mathjax: true

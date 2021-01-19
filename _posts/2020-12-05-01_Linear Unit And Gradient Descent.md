@@ -2,7 +2,7 @@
 layout: post
 title: 线性单元和梯度下降
 date: 2020-12-05
-Author: Zhiliang 
+author: Zhiliang 
 tags: [Machine Learning]
 toc: true
 mathjax: true
