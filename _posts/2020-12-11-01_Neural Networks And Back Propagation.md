@@ -104,8 +104,7 @@ y_1&=sigmoid(\vec{w}^T\centerdot\vec{a})\\
 \end{align}\tag{3.3}
 $$
 
-同理，我们还可以计算出的值$y_2$。这样输出层所有节点的输出值计算完毕，我们就得到了在输入向量
-$\vec{x}=\left[ \begin{array}{c}x_1\\x_2\\x_3\\ \end{array} \right] $时，神经网络的输出向量$\vec{y}\left[ \begin{array}{c}y_1\\y_2\\ \end{array} \right]$。这里我们也看到，**输出向量的维度和输出层神经元个数相同**。
+同理，我们还可以计算出的值$y_2$。这样输出层所有节点的输出值计算完毕，我们就得到了在输入向量 $\vec{x}=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}$ 时，神经网络的输出向量 $\vec{y}=\begin{bmatrix}y_1\\y_2\end{bmatrix}$ 。这里我们也看到，**输出向量的维度和输出层神经元个数相同**。
 
 ## 神经网络的矩阵表示
 
