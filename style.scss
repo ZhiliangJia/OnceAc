@@ -777,6 +777,10 @@ footer {
 }
 
 #main{
-  overflow-x:scroll;
   z-index: 2;
+}
+
+.MathJax_Display{
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
