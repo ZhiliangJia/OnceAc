@@ -24,7 +24,7 @@ $$
 
 
 
-上式中，$W_f$是遗忘门的权重矩阵，$[\mathbf{h}_{t-1},\mathbf{x}_t]$表示把两个向量连接成一个更长的向量，$\mathbf{b}_f$是遗忘门的偏置项，$\sigma$是sigmoid函数。如果输入的维度是$d_x$，隐藏层的维度是$d_h$，单元状态的维度是$d_c$（通常$d_c=d_h$），则遗忘门的权重矩阵$W_f$维度是$d_c\times (d_h+d_x)$。事实上，权重矩阵$W_f$都是两个矩阵拼接而成的：一个是$W_{fh}$，它对应着输入项$h_{t-1}$，其维度为$d_c\times d_h$；一个是$W_{fx}$，它对应着输入项$\mathbf{x}_t$，其维度为$d_c\times d_x$。可以写为：
+上式中，$W_f$是遗忘门的权重矩阵，$[\mathbf{h}\_{t-1},\mathbf{x}\_t]$表示把两个向量连接成一个更长的向量，$\mathbf{b}\_f$是遗忘门的偏置项，$\sigma$是sigmoid函数。如果输入的维度是$d_x$，隐藏层的维度是$d_h$，单元状态的维度是$d_c$（通常$d_c=d_h$），则遗忘门的权重矩阵$W_f$维度是$d_c\times (d_h+d_x)$。事实上，权重矩阵$W_f$都是两个矩阵拼接而成的：一个是$W_{fh}$，它对应着输入项$h_{t-1}$，其维度为$d_c\times d_h$；一个是$W_{fx}$，它对应着输入项$\mathbf{x}\_t$，其维度为$d_c\times d_x$。可以写为：
 
 $$
 
@@ -66,7 +66,7 @@ $$
 
 ![](https://gitee.com/zhiliangj/Typora_Img/raw/master/2256672-73a0246cafc1d10d.png)
 
-现在，我们计算当前时刻的单元状态$\mathbf{c}_t$。它是由上一次的单元状态$\mathbf{c}_{t-1}$按元素乘以遗忘门$f_t$，再用当前输入的单元状态$\mathbf{\tilde{c}}_t$按元素乘以输入门$i_t$，再将两个积加和产生的：
+现在，我们计算当前时刻的单元状态$\mathbf{c}\_t$。它是由上一次的单元状态$\mathbf{c}\_{t-1}$按元素乘以遗忘门$f_t$，再用当前输入的单元状态$\mathbf{\tilde{c}}\_t$按元素乘以输入门$i_t$，再将两个积加和产生的：
 
 $$
 
@@ -78,7 +78,7 @@ $$
 
 ![](https://gitee.com/zhiliangj/Typora_Img/raw/master/2256672-5c766f3d734334b1.png)
 
-这样，我们就把LSTM关于当前的记忆$\mathbf{\tilde{c}}_t$和长期的记忆$\mathbf{c}_{t-1}$组合在一起，形成了新的单元状态$\mathbf{c}_{t}$。由于遗忘门的控制，它可以保存很久很久之前的信息，由于输入门的控制，它又可以避免当前无关紧要的内容进入记忆。下面，我们要看看输出门，它控制了长期记忆对当前输出的影响：
+这样，我们就把LSTM关于当前的记忆$\mathbf{\tilde{c}}\_t$和长期的记忆$\mathbf{c}\_{t-1}$组合在一起，形成了新的单元状态$\mathbf{c}\_{t}$。由于遗忘门的控制，它可以保存很久很久之前的信息，由于输入门的控制，它又可以避免当前无关紧要的内容进入记忆。下面，我们要看看输出门，它控制了长期记忆对当前输出的影响：
 
 $$
 
@@ -249,7 +249,7 @@ $$
 
 $$
 
-显然，$\mathbf{o}_t$、$\mathbf{f}_t$、$\mathbf{i}_t$、$\mathbf{\tilde{c}}_t$都是$\mathbf{h}_{t-1}$的函数，那么利用全导数公式可得：
+显然，$\mathbf{o}\_t$、$\mathbf{f}\_t$、$\mathbf{i}\_t$、$\mathbf{\tilde{c}}\_t$都是$\mathbf{h}\_{t-1}$的函数，那么利用全导数公式可得：
 
 $$
 
@@ -385,7 +385,7 @@ $$
 
 上式中，$f^{l-1}$表示第$l-1$层的**激活函数**。
 
-因为$\mathbf{net}_{f,t}^l$、$\mathbf{net}_{i,t}^l$、$\mathbf{net}_{\tilde{c},t}^l$、$\mathbf{net}_{o,t}^l$都是$\mathbf{x}_t$的函数，$\mathbf{x}_t$又是$\mathbf{net}_t^{l-1}$的函数，因此，要求出$E$对$\mathbf{net}_t^{l-1}$的导数，就需要使用全导数公式：
+因为$\mathbf{net}\_{f,t}^l$、$\mathbf{net}\_{i,t}^l$、$\mathbf{net}\_{\tilde{c},t}^l$、$\mathbf{net}\_{o,t}^l$都是$\mathbf{x}\_t$的函数，$\mathbf{x}\_t$又是$\mathbf{net}\_t^{l-1}$的函数，因此，要求出$E$对$\mathbf{net}\_t^{l-1}$的导数，就需要使用全导数公式：
 
 $$
 
