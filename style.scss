@@ -538,6 +538,7 @@ nav {
   z-index: 4;
   padding: 60px 20px 0 20px;
   overflow-y: auto;
+  background-color: white;
   
   &:before{
     content:"目录";
@@ -773,4 +774,9 @@ footer {
   color: #007991;
   outline: none;
   box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+#main{
+  overflow-x:scroll;
+  z-index: 2;
 }
