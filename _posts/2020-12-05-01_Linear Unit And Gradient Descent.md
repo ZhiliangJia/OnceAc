@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Unit And Gradient Descent
+title: 线性单元和梯度下降
 date: 2020-12-05
 Author: Zhiliang 
 tags: [Machine Learning]
