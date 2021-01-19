@@ -5,7 +5,7 @@ permalink: /search/
 ---
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="搜索博客 - 输入标题/相关内容/日期/Tags.." style="width:380px;"/>
+<input type="text" id="search-input" placeholder="搜索博客 - 输入标题/相关内容/日期/Tags.." style="width:380px;font-family:simsun, 'Times New Roman'"/>
 <ul id="results-container"></ul>
 
 <!-- script pointing to jekyll-search.js -->
