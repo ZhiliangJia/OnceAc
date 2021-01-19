@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 卷积神经网络
-date: 2020-12-04
+date: 2021-01-08
 author: Zhiliang 
 tags: [Machine Learning]
 toc: true
