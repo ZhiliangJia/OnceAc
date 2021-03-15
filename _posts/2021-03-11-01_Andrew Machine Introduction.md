@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pandas基础
+title: 吴恩达 机器学习 引言
 date: 2021-03-11
 author: Zhiliang 
 tags: [Python,Basic,Pandas]
