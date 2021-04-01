@@ -279,3 +279,4 @@ reinforcement learning的意思是：机器跟对手互下，机器会不断的�
 
  大家注意一下这个不同的方块，我是用不同的颜色来表示。同样的颜色不同的方块是同一个类型的，这边的蓝色的方块，指的是学习的情景，通常学习的情景是你没有办法控制的。比如，因为我们没有data做监督学习，所以我们才做reinforcement learning。现在因为Alpha Go比较火，所以Alpha Go中用到的reinforcement learning会被认为比较潮。所以说有学生去面试，说明自己是做监督学习的，就会被质疑为什么不做reinforcement learning。那这个时候你就应该和他说，如果我今天可以监督学习，其实就不应该做reinforcement learning。reinforcement learning就是我们没有办法做监督学习的时候，我们才做reinforcement learning。红色的是指你的task，你要解的问题，你要解的这个问题随着你用的方程的不同，有regression、有classification、有structured。所以在不同的情境下，都有可能要解这个task。最后，在这些不同task里面有不同的model，用绿色的方块表示。
 
+转载自：[LeeML-Notes](https://datawhalechina.github.io/leeml-notes/)
