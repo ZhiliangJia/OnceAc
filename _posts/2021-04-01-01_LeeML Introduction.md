@@ -15,6 +15,8 @@ mathjax: true
 
 
 
+
+
 # 机器学习介绍
 
 ![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-1.png)
@@ -103,11 +105,11 @@ AI这个词现在非常非常非常非常的热门，所以会有各式各样、
 
 机器可以根据训练资料判断一个function是好的，还是不好的。举例来说：在这个例子里面显然$f_1$，他比较符合training data的叙述，比较符合我们的知识。所以f1看起来是比较好的。$f_2$看起来是一个荒谬的function。我们今天讲的这个task叫做supervised learning。
 
-![](F:\Workspace\MarkdownWorkspace\00\leeml-notes\docs\chapter1\res\chapter1-17.png)
+![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-17.png)
 
 如果你告诉机器input和output这就叫做supervised learning，之后我们也会讲到其他不同的学习场景。现在机器有办法决定一个function的好坏。但光能够决定一个function的好坏是不够的，因为在你的function set里面，他有成千上万的function，它有会无穷无尽的function，所以我们需要一个有效率的演算法，有效率的演算法可以从function的set里面挑出最好的function。一个一个衡量function的好坏太花时间，实际上做不到。所以我们需要有一个好的演算法，从function set里面挑出一个最好的的function，这个最好的function将它记为$f^*$
 
-![](F:\Workspace\MarkdownWorkspace\00\leeml-notes\docs\chapter1\res\chapter1-18.png)
+![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-18.png)
 
 找到$f^ *$之后，我们希望用它应用到一些场景中，比如：影像辨识，输入一张在机器没有看过的猫，然后希望输出也是猫。你可能会说：机器在学习时没有看到这只猫，那咋样知道在测试时找到的最好function $f^ *$可以正确辨识这只猫呢？这就是machine learning里面非常重要的问题：机器有举一反三的能力，这个内容后面再讲。
 
@@ -122,7 +124,7 @@ AI这个词现在非常非常非常非常的热门，所以会有各式各样、
 
 #  机器学习相关的技术
 
-![](F:\Workspace\MarkdownWorkspace\00\leeml-notes\docs\chapter1\res\chapter1-21.png)
+![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-21.png)
 
 如图为这学期的Learning Map，看起来是有点复杂的，我们一块一块来解释，接下里我们将从图的左上角来进行学习。
 
@@ -203,7 +205,7 @@ Regression是一种machine learning的task，当我们说：我们要做regressi
 
 另外一个减少data用量的方向是迁移学习。
 
-![](F:\Workspace\MarkdownWorkspace\00\leeml-notes\docs\chapter1\res\chapter1-37.png)
+![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-37.png)
 
 迁移学习的意思是：假设我们要做猫和狗的分类问题，我们也一样，只有少量的有label的data。但是我们现在有大量的data，这些大量的data中可能有label也可能没有label。但是他跟我们现在要考虑的问题是没有什么特别的关系的，我们要分辨的是猫和狗的不同，但是这边有一大堆其他动物的图片还是动画图片（凉宫春日，御坂美琴）你有这一大堆不相干的图片，它到底可以带来什么帮助。这个就是迁移学习要讲的问题。
 
@@ -255,7 +257,7 @@ structured learning 中让机器输出的是要有结构性的，举例来说：
 
 reinforcement learning其实是一个已经发展了很久的技术，但近期受到大家的关注是因为data mining将reinforcement learning技术用来玩一些小游戏。另外一个就是Alpha Go。
 
-##  强化学习
+强化学习
 
 ![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter1-48.png)
 
