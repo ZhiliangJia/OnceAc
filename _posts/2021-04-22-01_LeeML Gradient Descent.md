@@ -294,6 +294,7 @@ $$
 然后将u和v带入。
 
 ![](https://gitee.com/zhiliangj/Typora_Img/raw/master/chapter6-22.png)
+
 $$
 L(\theta)\approx s+u(\theta_1 - a)+v(\theta_2 - b) \tag{14}
 $$
@@ -311,6 +312,6 @@ $$
 还有可能卡在不是极值，但微分值是0的地方
 还有可能实际中只是当微分值小于某一个数值就停下来了，但这里只是比较平缓，并不是极值点
 
-
+后续看[LeeML-Notes](https://datawhalechina.github.io/leeml-notes/)
 
 转载自：[LeeML-Notes](https://datawhalechina.github.io/leeml-notes/)
